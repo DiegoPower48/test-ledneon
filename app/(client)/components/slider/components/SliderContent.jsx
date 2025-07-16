@@ -15,7 +15,7 @@ const variables = [process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,process.env.NEX
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-2 md:mb-4">
           Letreros para tu negocio
         </h1>
-        <h2 onClick={()=>console.log("probando")} className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 whitespace-normal break-words">
+        <h2 onClick={()=>console.log("probando",variables)} className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 whitespace-normal break-words">
           HAZ BRILLAR
           <br className="hidden sm:block" />
           <span className="sm:hidden"> </span>
