@@ -10,8 +10,9 @@ export const SlideItem = ({ slides, current }) => {
   index === current ? (
     <div
     key={index}
-    className="absolute inset-0 opacity-100"
+         className="absolute inset-0 transition-opacity duration-500 opacity-100"
   >
+    
    <div className="relative w-full h-[70vh]">
   <Image
     src={slide.imgSrc}

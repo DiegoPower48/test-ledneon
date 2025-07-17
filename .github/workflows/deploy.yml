@@ -1,4 +1,4 @@
-name: Deploy to Git Branch
+name: Copiar a Deploy y push a Hostinger
 
 on:
   push:
