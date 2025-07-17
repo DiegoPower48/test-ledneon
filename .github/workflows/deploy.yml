@@ -1,4 +1,4 @@
-name: Copiar a Deploy y push a Hostinger
+name: Copiar a Deploy y push Deploy para Hostinger
 
 on:
   push:
