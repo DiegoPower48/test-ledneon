@@ -18,7 +18,7 @@ export const SlideItem = ({ slides, current }) => {
       {isFirst ? (
       <>
   <img
-    src="/home/logo_mlg_letras_doradas_con_iluminacion.webp"
+    src="/home/logo_mlg_letras_doradas_con_iluminacion_mobile.webp"
     alt="Logotipo móvil"
     width="768"
     height="1024"
@@ -29,7 +29,7 @@ export const SlideItem = ({ slides, current }) => {
 
  
   <img
-    src="/home/logo_mlg_letras_doradas_con_iluminacion_mobile.webp"
+    src="/home/logo_mlg_letras_doradas_con_iluminacion.webp"
     alt="Logotipo escritorio"
     width="1920"
     height="1080"
