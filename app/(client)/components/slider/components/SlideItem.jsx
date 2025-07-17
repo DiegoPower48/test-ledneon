@@ -15,29 +15,37 @@ export const SlideItem = ({ slides, current }) => {
             className={`absolute inset-0 ${isActive ? "" : "hidden"}`}
           >
             {isFirst ? (
-              <>
-                {/* Imagen para móviles */}
-                <img
-                  src="/home/logo_mlg_letras_doradas_con_iluminacion_mobile.webp"
-                  alt="Logotipo dorado de MLG versión móvil"
-                  width="768"
-                  height="1024"
-                  loading="eager"
-                  decoding="async"
-                  className="block md:hidden w-full h-full object-cover object-center brightness-75"
-                />
+             <picture>
+  {/* Imagen solo para móviles */}
+  <source
+    srcSet="/home/logo_mlg_letras_doradas_con_iluminacion_mobile.webp"
+    media="(max-width: 767px)"
+    type="image/webp"
+  />
 
-                {/* Imagen para escritorio/tablet */}
-                <img
-                  src="/home/logo_mlg_letras_doradas_con_iluminacion.webp"
-                  alt="Logotipo dorado iluminado de MLG en pared de oficina"
-                  width="1920"
-                  height="1080"
-                  loading="eager"
-                  decoding="async"
-                  className="hidden md:block w-full h-full object-cover object-center brightness-75"
-                />
-              </>
+  {/* Imagen solo para escritorio y tablet */}
+  <source
+    srcSet="/home/logo_mlg_letras_doradas_con_iluminacion.webp"
+    media="(min-width: 768px)"
+    type="image/webp"
+  />
+
+  <img
+    src="/home/logo_mlg_letras_doradas_con_iluminacion.webp"
+    alt="Logotipo dorado iluminado de MLG en pared de oficina"
+    width="1920"
+    height="1080"
+    loading="eager"
+    decoding="async"
+    style={{
+      objectFit: "cover",
+      objectPosition: "center",
+      width: "100%",
+      height: "100%",
+      filter: "brightness(75%)",
+    }}
+  />
+</picture>
             ) : (
               <img
                 src={slide.imgSrc}
