@@ -1,3 +1,14 @@
+@import './client/components/footer/footer.css';
+@import './client/components/header/header.css';
+@import './client/productos/components/client/components/section2/productsStyle.css';
+@import './client/productos/components/productoStyles.css';
+@import './edition/components/footer.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 @font-face {
   font-family: 'League Gothic';
   src: url('/fonts/league-gothic.woff2') format('woff2');
@@ -11,11 +22,6 @@
   font-weight: 400;
   font-display: swap;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 
 :root {
   /* Original custom colors */

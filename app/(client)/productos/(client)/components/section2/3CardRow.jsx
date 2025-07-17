@@ -1,7 +1,5 @@
 "use client";
 
-import "./productsStyle.css";
-
 const prodInfo = [
   { id: 1, description1: "Acrílico", description2: "Exterior", description3: "Variedad de color y diseño" },
   { id: 2, description1: "Aluminio anodizado", description2: "Interior y exterior", description3: "Color dorado y plateado" },

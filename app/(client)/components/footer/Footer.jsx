@@ -1,5 +1,4 @@
 import Link from "next/link";
-import './footer.css'
 import { SocialMedia } from "./SocialMedia";
 export default function Footer() {   
     return (

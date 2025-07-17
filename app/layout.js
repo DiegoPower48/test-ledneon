@@ -1,5 +1,5 @@
 import { Montserrat } from 'next/font/google';
-import "./globals.css";
+import "../styles/globals.css";
 import { WhatsAppButton } from "./(client)/components/index";
 
 const montserrat = Montserrat({

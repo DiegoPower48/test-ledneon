@@ -1,5 +1,4 @@
 import React from "react";
-import "./productoStyles.css";
 import { cn } from "@/lib/utils";
 
 

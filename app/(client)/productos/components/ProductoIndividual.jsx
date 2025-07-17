@@ -1,5 +1,4 @@
 import React from 'react';
-import './productoStyles.css';
 
 function Producto({ imgSrc, altText, description, route }) {
   return (

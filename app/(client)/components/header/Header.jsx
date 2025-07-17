@@ -1,9 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import DropdownLink from "./components/DropdownLink";
 import LinkNav from "./components/LinkNav";
-import "./header.css";
 
 export default function Header() {
     const [menuActive, setMenuActive] = useState(false);

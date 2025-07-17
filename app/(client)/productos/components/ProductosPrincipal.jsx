@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import FilaProductos from "./FilaProductos";
 import LineaHorizontal from "./LineaHorizontal";
 
-import "./productoStyles.css";
 
 export default function Productos() {
   // Definimos los productos por fila como un arreglo de objetos

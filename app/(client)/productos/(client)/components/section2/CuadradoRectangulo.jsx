@@ -1,5 +1,4 @@
 import React from "react";
-import "./productsStyle.css";
 
 const productosInfo = [
   { id: 1, title: "LETRAS DE ACRÍLICO", description: "Las letras de acrílico personalizadas son elementos decorativos y funcionales ideales para una amplia variedad de aplicaciones. Disponibles en versiones iluminadas para exteriores, las letras personalizadas para negocios y empresas se adaptan a tus necesidades.", image: "letras_acrílico_ledneonpublicidad.webp" },

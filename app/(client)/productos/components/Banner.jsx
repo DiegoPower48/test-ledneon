@@ -2,7 +2,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { useRouter } from 'next/navigation';
-import "./productoStyles.css";
 
 export default function Banner() {
   const circleRef = useRef(null);
