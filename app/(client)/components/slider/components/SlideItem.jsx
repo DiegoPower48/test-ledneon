@@ -54,7 +54,7 @@ export const SlideItem = ({ slides, current }) => {
                 height="1080"
                 loading="lazy"
                 decoding="async"
-                className="w-full h-full object-cover object-center brightness-75"
+                className="w-full h-full object-cover object-center brightness-50"
               />
             )}
 
