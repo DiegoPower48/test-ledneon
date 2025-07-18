@@ -16,33 +16,22 @@ export const SlideItem = ({ slides, current }) => {
             className={`absolute inset-0 ${isActive ? "" : "hidden"}`}
           >
             {isFirst ? (
-           
-<picture>
-  <source
-    srcSet="/home/logo_mlg_letras_doradas_con_iluminacion_mobile.webp"
-    media="(max-width: 767px)"
-    type="image/webp"
-  />
-  <source
-    srcSet="/home/logo_mlg_letras_doradas_con_iluminacion.webp"
-    media="(min-width: 768px)"
-    type="image/webp"
-  />
-  <Image
-    src="/home/logo_mlg_letras_doradas_con_iluminacion.webp"
-    alt="Logotipo dorado iluminado de MLG en pared de oficina"
-    width={1920}
-    height={1080}
-    priority
-    style={{
-      objectFit: "cover",
-      objectPosition: "center",
-      width: "100%",
-      height: "100%",
-      filter: "brightness(75%)",
-    }}
-  />
-</picture>
+              <Image
+                src="/home/logo_mlg_letras_doradas_con_iluminacion.webp"
+                alt="Logotipo dorado iluminado de MLG en pared de oficina"
+                width={1920}
+                height={1080}
+                priority
+                fetchPriority="high" // <--- mejora LCP
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "center",
+                  width: "100%",
+                  height: "100%",
+                  filter: "brightness(75%)",
+                }}
+                sizes="(max-width: 767px) 100vw, (min-width: 768px) 100vw"
+              />
             ) : (
               <img
                 src={slide.imgSrc}

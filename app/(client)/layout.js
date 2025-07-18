@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import { Header, Footer } from "./components/index"
+import { Header, Footer } from "./components/index";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,12 +13,23 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "NeonLedStore",
-    description: "Descubrexd luces LED personalizadas y decorativas. Ilumina tus espacios con estilo único, calidad premium y diseños modernos.",
+  description:
+    "Descubrexd luces LED personalizadas y decorativas. Ilumina tus espacios con estilo único, calidad premium y diseños modernos.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <>
+      <Head>
+        <link
+          rel="preload"
+          as="image"
+          href="/home/logo_mlg_letras_doradas_con_iluminacion.webp"
+          imagesrcset="/home/logo_mlg_letras_doradas_con_iluminacion.webp"
+          imagesizes="100vw"
+          fetchpriority="high"
+        />
+      </Head>
       <Header />
       {children}
       <Footer />
