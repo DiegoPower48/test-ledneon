@@ -17,16 +17,11 @@ export const SlideItem = ({ slides, current }) => {
           height={450}
           priority
           fetchPriority="high"
-          style={{
-            objectFit: "cover",
-            objectPosition: "center",
-            width: "100%",
-            height: "100%",
-          }}
+          fill
           sizes="(max-width: 767px) 100vw, (max-width: 1023px) 80vw, 60vw"
         />
       ) : (
-        <img
+        <Image
           src={slide.imgSrc}
           alt={slide.altText}
           width="1920"
