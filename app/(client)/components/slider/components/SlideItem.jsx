@@ -13,7 +13,7 @@ export const SlideItem = ({ slides, current }) => {
         <Image
           src="/home/logo_mlg_letras_doradas_con_iluminacion.webp"
           alt="Logotipo dorado iluminado de MLG en pared de oficina"
-          width={800} // <--- menor para móvil
+          width={800}
           height={450}
           priority
           fetchPriority="high"
@@ -37,8 +37,10 @@ export const SlideItem = ({ slides, current }) => {
         />
       )}
 
-      {/* Overlay oscuro para mejorar contraste, sin filtros ni blur */}
-      <div className="absolute inset-0 bg-black/30 pointer-events-none z-10" />
+      {/* Overlay solo en md+ */}
+      <div className="absolute inset-0 bg-black">
+        {/* ...resto del código... */}
+      </div>
     </div>
   );
 };
