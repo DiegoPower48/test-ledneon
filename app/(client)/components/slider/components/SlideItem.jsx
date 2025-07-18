@@ -24,7 +24,7 @@ export const SlideItem = ({ slides, current }) => {
             height: "100%",
             filter: "brightness(75%)",
           }}
-          sizes="(max-width: 767px) 100vw, (min-width: 768px) 100vw"
+          sizes="(max-width: 767px) 100vw, (max-width: 1023px) 80vw, 60vw" // <--- optimizado
         />
       ) : (
         <img
