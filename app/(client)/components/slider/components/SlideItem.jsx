@@ -22,9 +22,8 @@ export const SlideItem = ({ slides, current }) => {
             objectPosition: "center",
             width: "100%",
             height: "100%",
-            filter: "brightness(75%)",
           }}
-          sizes="(max-width: 767px) 100vw, (max-width: 1023px) 80vw, 60vw" // <--- optimizado
+          sizes="(max-width: 767px) 100vw, (max-width: 1023px) 80vw, 60vw"
         />
       ) : (
         <img
@@ -34,15 +33,12 @@ export const SlideItem = ({ slides, current }) => {
           height="1080"
           loading="lazy"
           decoding="async"
-          className="w-full h-full object-cover object-center brightness-50"
+          className="w-full h-full object-cover object-center"
         />
       )}
 
-      {/* Borde izquierdo borroso - visible solo en pantallas md+ */}
-      <div className="hidden md:block absolute left-0 top-0 h-full w-16 bg-black/10 backdrop-blur-sm pointer-events-none z-10" />
-
-      {/* Borde derecho borroso - visible solo en pantallas md+ */}
-      <div className="hidden md:block absolute right-0 top-0 h-full w-16 bg-black/10 backdrop-blur-sm pointer-events-none z-10" />
+      {/* Overlay oscuro para mejorar contraste, sin filtros ni blur */}
+      <div className="absolute inset-0 bg-black/30 pointer-events-none z-10" />
     </div>
   );
 };
