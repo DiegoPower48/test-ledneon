@@ -13,8 +13,8 @@ export const SlideItem = ({ slides, current }) => {
         <Image
           src="/home/logo_mlg_letras_doradas_con_iluminacion.webp"
           alt="Logotipo dorado iluminado de MLG en pared de oficina"
-          width={1920}
-          height={1080}
+          width={800} // <--- menor para móvil
+          height={450}
           priority
           fetchPriority="high"
           style={{
