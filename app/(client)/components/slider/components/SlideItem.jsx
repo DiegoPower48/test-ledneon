@@ -6,32 +6,21 @@ import React from "react";
 export const SlideItem = ({ slides, current }) => {
   const slide = slides[current];
 
-  // Detecta si es móvil
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
-
-  // Usa imagen optimizada para móvil si existe y es el slide activo
-  const mainImgSrc =
-    isMobile && slide.imgSrcMobile ? slide.imgSrcMobile : slide.imgSrc;
-
   return (
-    <div className="absolute inset-0 bg-black">
+    <div className="absolute inset-0 aspect-[16/9] md:aspect-[16/7]">
       <Image
-        src={mainImgSrc}
+        src={slide.imgSrcMobile || slide.imgSrc}
         alt={slide.altText}
-        width={800}
-        height={450}
-        priority
-        fetchPriority="high"
+        fill
+        priority={current === 0} // Solo prioridad para el primer slide
         style={{
           objectFit: "cover",
           objectPosition: "center",
-          width: "100%",
-          height: "100%",
         }}
         sizes="(max-width: 767px) 100vw, (max-width: 1023px) 80vw, 60vw"
       />
 
-      {/* Overlay solo en md+ */}
+      {/* Overlay para MD+ */}
       <div className="hidden md:block absolute inset-0 bg-black/30 pointer-events-none z-10" />
     </div>
   );
