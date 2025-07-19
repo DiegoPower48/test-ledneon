@@ -17,25 +17,25 @@ const AboutStatic = () => (
 export default function Home() {
   const fila1 = [
     {
-      imgSrc: "/productosPrincipal/letrero_crocs_verde_con_letras_blancas.webp",
+      imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942883/letrero_crocs_verde_con_letras_blancas_nzenlb.webp",
       altText: "Producto 1",
       description: "LETRAS DE ACRÍLICO",
       route: "/productos/letras-acrilico"
     },
     {
-      imgSrc: "/productosPrincipal/logo_lux_nails_studio_iluminado_en_dorado.webp",
+      imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942882/logo_lux_nails_studio_iluminado_en_dorado_v6ihnx.webp",
       altText: "Producto 2",
       description: "LETRAS DORADAS Y PLATEADAS",
       route: "/productos/letras-doradas"
     },
     {
-      imgSrc: "/productosPrincipal/fachada_farmacia_maria_pacheco_con_cruz_verde.webp",
+      imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942883/fachada_farmacia_maria_pacheco_con_cruz_verde_gsqtzk.webp",
       altText: "Fachada de Farmacia Lda. Maria Pacheco con cruz verde luminosa",
       description: "LETREROS LUMINOSOS",
       route: "/productos/letreros-luminosos"
     },
     {
-      imgSrc: "/productosPrincipal/letrero_woks_cerveza_artesanal_neon_verde_y_ambar.webp",
+      imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942884/letrero_woks_cerveza_artesanal_neon_verde_y_ambar_b7up1y.webp",
       altText: "Letrero neón de Wok's Cerveza Artesanal en colores verde y ámbar de noche",
       description: "LETRAS DE NEÓN",
       route: "/productos/letras-neon"
@@ -43,18 +43,18 @@ export default function Home() {
   ];
 
   const slidesData = [
-    { imgSrc: "/home/logo_mlg_letras_doradas_con_iluminacion.webp", altText: "Logotipo dorado iluminado de MLG en pared de oficina" },
-    { imgSrc: "/home/letreros_negocio_2.webp", altText: "Letrero iluminado de Bembos" },
-    { imgSrc: "/home/letrero_neon_tienda_tatuajes_tattoo.webp", altText: "Letrero neón con diseño de máquina de tatuajes y palabra Tattoo en vidriera" },
-    { imgSrc: "/home/letrero_tambo_colores_amarillo_y_magenta.webp", altText: "Letrero luminoso de Tambo con fondo amarillo y letras magenta" },
+    { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942676/logo_mlg_letras_doradas_con_iluminacion_s2wy9w.webp", altText: "Logotipo dorado iluminado de MLG en pared de oficina" },
+    { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942675/letreros_negocio_2_rvnini.webp", altText: "Letrero iluminado de Bembos" },
+    { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942673/letrero_neon_tienda_tatuajes_tattoo_c8smhh.webp", altText: "Letrero neón con diseño de máquina de tatuajes y palabra Tattoo en vidriera" },
+    { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942674/letrero_tambo_colores_amarillo_y_magenta_k7cqaa.webp", altText: "Letrero luminoso de Tambo con fondo amarillo y letras magenta" },
   ];
 
     const clientLogos = [
-    { imgSrc: "/home/Jockeyplaza_Logo_ledneonpublicidad.webp", altText: "Logotipo blanco y negro del centro comercial Jockey Plaza con letra J" },
-    { imgSrc: "/home/Malldelsur_Logo_ledneonpublicidad.webp", altText: "Logotipo de Mall del Sur con pétalos de colores sobre fondo azul" },
-    { imgSrc: "/home/logo_lk_constructora_e_inversiones.webp", altText: "Logotipo de L&K Constructora e Inversiones con diseño de edificio en tonos azules y verdes" },
-    { imgSrc: "/home/Crisol_Logo_ledneopublicidad.webp", altText: "Logotipo de Crisol con fondo amarillo y texto azul Libros y Más" }, 
-    { imgSrc: "/home/BancodelaNación_ledneonpublicidad.webp", altText: "Logotipo del Banco de la Nación Perú con texto negro y símbolo rojo" }, 
+    { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942999/Jockeyplaza_Logo_ledneonpublicidad_gba4th.webp", altText: "Logotipo blanco y negro del centro comercial Jockey Plaza con letra J" },
+    { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752943001/Malldelsur_Logo_ledneonpublicidad_p39w4h.webp", altText: "Logotipo de Mall del Sur con pétalos de colores sobre fondo azul" },
+    { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752943000/logo_lk_constructora_e_inversiones_b62s4d.webp", altText: "Logotipo de L&K Constructora e Inversiones con diseño de edificio en tonos azules y verdes" },
+    { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942998/Crisol_Logo_ledneopublicidad_ddnymo.webp", altText: "Logotipo de Crisol con fondo amarillo y texto azul Libros y Más" }, 
+    { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942997/BancodelaNaci%C3%B3n_ledneonpublicidad_rl0fq9.webp", altText: "Logotipo del Banco de la Nación Perú con texto negro y símbolo rojo" }, 
   ];
 
   return (
