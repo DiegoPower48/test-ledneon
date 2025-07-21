@@ -2,19 +2,25 @@ import { useEffect, useState } from "react";
 
 export const SlideItem = ({ slides, current }) => {
   const [isMobile, setIsMobile] = useState(false);
-
   const slide = slides[current];
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
-
-    checkMobile(); // Verifica al cargar
-    window.addEventListener("resize", checkMobile); // Verifica si cambia el tamaño
-
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const imageSrc = isMobile ? slide.imgSrcMobile || slide.imgSrc : slide.imgSrc;
+  const generateCloudinaryUrl = (url) => {
+    const base = "upload/";
+    const insert = isMobile
+      ? "w_768,h_450,c_fill,f_auto,q_auto"
+      : "w_1440,h_700,c_fill,f_auto,q_auto";
+
+    return url.replace(base, `${base}${insert}/`);
+  };
+
+  const imageSrc = generateCloudinaryUrl(slide.imgSrc);
 
   return (
     <div className="relative w-full h-[500px] sm:h-[700px] overflow-hidden">
