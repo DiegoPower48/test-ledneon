@@ -41,11 +41,11 @@ const Slider = ({ slides }) => {
         <SlideItem slides={slides} current={current} />
 
         {/* Panel de previsualización - Responsive y oculto en móviles */}
-        {/* <SlideThumbnails
+        <SlideThumbnails
           slides={slides}
           current={current}
           setCurrent={setCurrent}
-        /> */}
+        />
 
         {/* Indicadores de slide para móviles */}
         <SlideIndicators
