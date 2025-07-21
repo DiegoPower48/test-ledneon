@@ -1,27 +1,41 @@
-"use client";
-
-import Image from "next/image";
-import React from "react";
+import { useEffect, useState } from "react";
 
 export const SlideItem = ({ slides, current }) => {
-  const slide = slides[current];
+  const [isMobile, setIsMobile] = useState(false);
+
+  const slide = slides[current]
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+
+    checkMobile(); // Verifica al cargar
+    window.addEventListener("resize", checkMobile); // Verifica si cambia el tamaño
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const imageSrc = isMobile ? (slide.imgSrcMobile || slide.imgSrc) : slide.imgSrc;
 
   return (
-    <div className="absolute inset-0 aspect-[16/9] md:aspect-[16/7]">
-      <Image
-        src={slide.imgSrcMobile || slide.imgSrc}
-        alt={slide.altText}
-        fill
-        priority={current === 0} // Solo prioridad para el primer slide
-        style={{
-          objectFit: "cover",
-          objectPosition: "center",
-        }}
-        sizes="(max-width: 767px) 100vw, (max-width: 1023px) 80vw, 60vw"
-      />
+  <div className="relative w-full h-[500px] sm:h-[700px] overflow-hidden">
+  <img
+    src={imageSrc}
+    alt={slide.altText}
+    loading="lazy"
+    decoding="async"
+    fetchPriority="high"
+    className="object-cover object-center w-full h-full brightness-75"
+  />
 
-      {/* Overlay para MD+ */}
-      <div className="hidden md:block absolute inset-0 bg-black/30 pointer-events-none z-10" />
-    </div>
+          {/* Borde izquierdo borroso - visible solo en pantallas md+ */}
+            <div className="hidden md:block absolute left-0 top-0 h-full w-16 bg-black/10 backdrop-blur-sm pointer-events-none z-10" />
+
+            {/* Borde derecho borroso - visible solo en pantallas md+ */}
+            <div className="hidden md:block absolute right-0 top-0 h-full w-16 bg-black/10 backdrop-blur-sm pointer-events-none z-10" />
+        
+</div>
+
   );
 };
+
+export default SlideItem;
