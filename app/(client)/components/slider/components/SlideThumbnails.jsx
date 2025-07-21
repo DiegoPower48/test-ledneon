@@ -25,7 +25,8 @@ const getThumbnailUrl = (url) => {
             <Image
              src={getThumbnailUrl(slide.imgSrc)}
               alt={slide.altText}
-              fill           
+               width={128}
+  height={160}          
               className="object-cover rounded-xl shadow-2xl"
             />
           </button>
