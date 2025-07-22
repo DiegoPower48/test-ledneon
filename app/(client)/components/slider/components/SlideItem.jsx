@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
-export const SlideItem = ({ slides, current }) => {
+export const SlideItem = ({ slides, current,slidesMovil }) => {
   const [isMobile, setIsMobile] = useState(false);
-  const slide = slides[current];
+
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -11,22 +11,28 @@ export const SlideItem = ({ slides, current }) => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const generateCloudinaryUrl = (url) => {
-    const base = "upload/";
-    const insert = isMobile
-      ? "w_768,h_450,c_fill,f_auto,q_auto"
-      : "w_1440,h_700,c_fill,f_auto,q_auto";
+  const generateCloudinaryUrl = () => {
+      if(isMobile){
+return slidesMovil[current].imgSrc
+      }
+      return slides[current].imgSrc
 
-    return url.replace(base, `${base}${insert}/`);
+
+    // const base = "upload/";
+    // const insert = isMobile
+    //   ? "w_768,h_450,c_fill,f_auto,q_auto"
+    //   : "w_1440,h_700,c_fill,f_auto,q_auto";
+
+    // return url.replace(base, `${base}${insert}/`);
   };
 
-  const imageSrc = generateCloudinaryUrl(slide.imgSrc);
+  // const imageSrc = generateCloudinaryUrl(slide.imgSrc);
 
   return (
     <div className="relative w-full h-[500px] sm:h-[700px] overflow-hidden">
       <img
-        src={imageSrc}
-        alt={slide.altText}
+        src={generateCloudinaryUrl()}
+        alt={slides[current].altText}
         decoding="async"
         fetchPriority="high"
         className="object-cover object-center w-full h-full brightness-75"

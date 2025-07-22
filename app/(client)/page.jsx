@@ -49,6 +49,13 @@ export default function Home() {
     { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942674/letrero_tambo_colores_amarillo_y_magenta_k7cqaa.webp", altText: "Letrero luminoso de Tambo con fondo amarillo y letras magenta" },
   ];
 
+  const slidesDataMovil = [
+    { imgSrc: "/home/logo_mlg_letras_doradas_con_iluminacion_mobile.webp", altText: "Logotipo dorado iluminado de MLG en pared de oficina" },
+    { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942675/letreros_negocio_2_rvnini.webp", altText: "Letrero iluminado de Bembos" },
+    { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942673/letrero_neon_tienda_tatuajes_tattoo_c8smhh.webp", altText: "Letrero neón con diseño de máquina de tatuajes y palabra Tattoo en vidriera" },
+    { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942674/letrero_tambo_colores_amarillo_y_magenta_k7cqaa.webp", altText: "Letrero luminoso de Tambo con fondo amarillo y letras magenta" },
+  ];
+
     const clientLogos = [
     { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752942999/Jockeyplaza_Logo_ledneonpublicidad_gba4th.webp", altText: "Logotipo blanco y negro del centro comercial Jockey Plaza con letra J" },
     { imgSrc: "https://res.cloudinary.com/dqaetlpog/image/upload/v1752943001/Malldelsur_Logo_ledneonpublicidad_p39w4h.webp", altText: "Logotipo de Mall del Sur con pétalos de colores sobre fondo azul" },
@@ -60,7 +67,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-[--azul_oscuro] overflow-hidden">
-      <Slider slides={slidesData} />
+      <Slider slides={slidesData} slidesMovil={slidesDataMovil} />
 
         <div className="px-4 lg:px-8 mt-20 mb-24">
           <NuestrosProductos />

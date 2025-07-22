@@ -7,7 +7,7 @@ import { SlideThumbnails } from "./components/SlideThumbnails";
 import { SlideIndicators } from "./components/SlideIndicators";
 import { SlideNavigation } from "./components/SlideNavigation";
 
-const Slider = ({ slides }) => {
+const Slider = ({ slides, slidesMovil }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -38,7 +38,7 @@ const Slider = ({ slides }) => {
       {/*Contenido de la izquierda  que tiene background de imagen*/}
       {/* Contenedor principal del slide */}
       <div className="relative w-full h-full">
-        <SlideItem slides={slides} current={current} />
+        <SlideItem slides={slides} slidesMovil={slidesMovil} current={current} />
 
         {/* Panel de previsualización - Responsive y oculto en móviles */}
         <SlideThumbnails
