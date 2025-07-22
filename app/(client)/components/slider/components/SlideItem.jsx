@@ -33,6 +33,8 @@ return slidesMovil[current].imgSrc
       <img
         src={generateCloudinaryUrl()}
         alt={slides[current].altText}
+         width={128}
+  height={160}
         decoding="async"
         fetchPriority="high"
         className="object-cover object-center w-full h-full brightness-75"
