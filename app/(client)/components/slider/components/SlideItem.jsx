@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export const SlideItem = ({ slides, current, slidesMovil }) => {
@@ -14,13 +15,12 @@ export const SlideItem = ({ slides, current, slidesMovil }) => {
 
   return (
     <div className="relative w-full h-[500px] sm:h-[700px] overflow-hidden">
-      <img
+      <Image
   src={slide.imgSrc}
-  srcSet={`${slide.imgSrc.replace(".webp", "")}_mobile.webp 768w, ${slide.imgSrc} 1440w`}
-  sizes="(max-width: 768px) 100vw, 1440px"
+  
+fill
   alt={slide.altText}
-  width={isMobile ? 768 : 1440}
-  height={isMobile ? 450 : 700}
+ 
   className="object-cover object-center w-full h-full brightness-75"
   decoding="async"
   fetchPriority="high"
