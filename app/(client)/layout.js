@@ -30,6 +30,10 @@ export default function RootLayout({ children }) {
           imagesizes="100vw"
           fetchpriority="high"
         />
+        <link rel="preload" as="image"
+      href="https://test.ledneonpublicidad.com/path/to/lcp-mobile.webp"
+      media="(max-width:767px)"
+      type="image/webp"></link>
       </Head>
       <Header />
       {children}
