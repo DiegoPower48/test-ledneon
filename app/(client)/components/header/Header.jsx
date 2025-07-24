@@ -86,7 +86,7 @@ export default function Header() {
 
                     {currentMenu === "main" ? (
                         <div className=" w-[90px] text-white mx-7 text-center logo">
-                            <img src="/header_footer/logo_azul_letraBlanco_ledneonpublicidad.webp" alt="Logotipo de Neon LED Publicidad con letras blancas y fondo negro" />
+                            {/* <img src="/header_footer/logo_azul_letraBlanco_ledneonpublicidad.webp" alt="Logotipo de Neon LED Publicidad con letras blancas y fondo negro" /> */}
                         </div>
                     ) : (
                         <div className="h-[50px] w-auto  text-white mx-7 text-center logo flex items-center justify-center">
@@ -263,7 +263,7 @@ export default function Header() {
                         </>
                     )}
 
-                    <div className="red-bg">
+                    {/* <div className="red-bg">
                         <div className="absolute w-[110px] h-[110px] left-1/2 bottom-0 translate-x-[-50%] translate-y-[40%] z-30 rounded-full bg-white flex items-center justify-center">
                             <img
                                 className="w-[75px] h-[75px] object-contain"
@@ -271,7 +271,7 @@ export default function Header() {
                                 alt="Logotipo de Neon LED Publicidad con letras negras"
                             />
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
                 {/* )} */}
