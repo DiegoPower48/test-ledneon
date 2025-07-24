@@ -72,7 +72,7 @@ export default function Home() {
         <div className="px-4 lg:px-8 mt-20 mb-24">
           <NuestrosProductos />
           <div className="mt-8">
-            <FilaProductos productos={fila1} />
+            {/* <FilaProductos productos={fila1} /> */}
             
           </div>
         </div>
