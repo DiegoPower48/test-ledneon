@@ -59,6 +59,7 @@ export default {
   			}
   		},
   		fontFamily: {
+			sans: ['var(--font-montserrat)', 'sans-serif'],
   			title: [
   				'Telegraf',
   				'ui-serif'
