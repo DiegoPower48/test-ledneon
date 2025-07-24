@@ -80,9 +80,9 @@ export default function Home() {
         <AboutStatic />
 
 
-        <div className="flex justify-center mt-20 mb-24">
+        {/* <div className="flex justify-center mt-20 mb-24">
         <Slider2 slides={clientLogos} />
-        </div>
+        </div> */}
 
 
       </div>
