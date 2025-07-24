@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 
+@font-face {
+  font-family: 'League Gothic';
+  src: url('/fonts/league-gothic.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
 
 :root {
   /* Original custom colors */
@@ -197,6 +203,10 @@
 
 .border-azul-cobalto {
   border-color: var(--azul_cobalto);
+}
+
+.font-league {
+  font-family: 'League Gothic', sans-serif;
 }
 
 
