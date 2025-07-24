@@ -1,13 +1,5 @@
-import { Montserrat } from 'next/font/google';
 import "../styles/globals.css";
 import { WhatsAppButton } from "./(client)/components/index";
-import Head from 'next/head';
-
-const montserrat = Montserrat({
-    subsets: ['latin'],
-    weight: ['400', '500', '700'],
-    variable: '--font-montserrat',
-});
 
 export const metadata = {
   title: "Neon Led Publicidad _ Inicio",
