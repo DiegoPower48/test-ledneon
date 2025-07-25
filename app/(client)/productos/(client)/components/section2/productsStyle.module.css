@@ -1,0 +1,242 @@
+.homecontainer {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+ margin-bottom: 20px;
+}
+
+.overlaycards {
+  position: absolute;
+  top: 4%;
+  z-index: 1;
+  width: 100%;
+  justify-content: center;
+}
+
+.gradientbanner {
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.whiteline {
+  height: 30%;
+  flex: 1;
+  background-color: #ffffff;
+}
+
+.gradientline {
+  flex: 2;
+  height: 100%;
+  background: linear-gradient(to right, #44b0f8, #1a7af5, #1056d2);
+}
+
+.threecardrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: nowrap;
+}
+
+.card {
+  background-color: #0e1721;
+  border-radius: 12px;
+  text-align: center;
+  padding: 1.5rem;
+  width: 30%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+}
+
+.cardicon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.cardtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.carddescription {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.squareinfocontainer {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: 30%;
+  z-index: 1;
+}
+
+.customsquare {
+  background-color: #0e1721;
+  border-radius: 0 8px 8px 0;
+  width: 30%;
+  height: auto;
+  flex-shrink: 0;
+  /* border: 1px solid red; */
+}
+
+.inforectangle {
+  background-color: #0e1721;
+  border-radius: 12px 0 0 12px;
+  padding: 5rem 4rem;
+  width: 60%;
+  color: white;
+}
+
+.infotitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #c5e8f9;
+  text-shadow: 0 0 1px #c5e8f9, 0 0 2px #c5e8f9, 0 0 20px #c5e8f9;
+}
+
+.infodescription {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.intermediateimage {
+  position: absolute;
+  bottom: -20%;
+  left: 17%;
+  transform: translateX(-30%) translateY(30%);
+  width: auto;
+  height: 400px;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {  
+  .homecontainer {
+    height: 70vh;
+  }
+  .gradientbanner {
+    min-height: 60vh;
+    margin-top: 0;
+  }
+  .squareinfocontainer {
+    height: auto;
+    bottom: 45%;
+    /* flex-direction: column; */
+    gap: 2rem;
+    justify-content: right;
+  }
+  .intermediateimage {
+    transform: translateX(-10%) translateY(65%);
+  }
+  .customsquare {
+    display: none;
+  }
+  .inforectangle {
+    padding: 5rem 1.8rem 5rem 5rem;
+    width: 90%;
+  }
+  .card {
+    max-height: 180px;
+    width: 25%;
+  }
+  .carddescription {
+    font-size: 0.75rem;
+  }
+  .cardtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 517px) {
+  .infodescription {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 697px) {
+  .inforectangle {
+    padding: 5rem 1.8rem 5rem 5rem;
+  }
+  .infodescription {
+    font-size: 0.65rem;
+  }
+  .intermediateimage {
+    width: auto;
+    height: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gradientbanner {
+    min-height: 80vh;
+  }
+  .whiteline {
+    flex: 1;
+  }
+  .gradientline {
+    flex: 3;
+  }
+}
+
+@media (max-width: 480px) {
+  .whiteline {
+    flex: 1;
+  }
+  .gradientline {
+    flex: 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .threecardrow {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 30%;
+    min-width: 150px;
+  }
+
+  .cardicon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cardtitle {
+    font-size: 0.9rem;
+  }
+
+  .carddescription {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 30%;
+    min-width: 120px;
+  }
+
+  .cardtitle {
+    font-size: 0.8rem;
+  }
+
+  .carddescription {
+    font-size: 0.7rem;
+  }
+}

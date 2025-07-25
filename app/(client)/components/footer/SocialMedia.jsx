@@ -21,11 +21,11 @@ export const SocialMedia = () => {
             src: "/header_footer/facebook_ledneonpublicidad.webp",
             alt: "Logotipo de Facebook representado como icono social en línea"
         },
-        // {
-        //     href: "https://www.instagram.com/neonledpublicidad.oficial/",
-        //     src: "/header_footer/instagram_ledneonpublicidad.webp",
-        //     alt: "Icono colorido de la red social Instagram con diseño moderno"
-        // },
+        {
+            href: "https://www.instagram.com/neonledpublicidad.oficial/",
+            src: "/header_footer/instagram_ledneonpublicidad.webp",
+            alt: "Icono colorido de la red social Instagram con diseño moderno"
+        },
     ]
 
     return (

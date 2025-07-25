@@ -3,7 +3,6 @@
 import React from "react";
 
 export const SliderContent = () => {
-
   return (
     <div className="absolute inset-0 flex flex-col justify-center text-left z-10 px-4 sm:px-8 md:px-12 lg:px-16">
       <div className="text-white">
