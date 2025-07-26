@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import DropdownLink from "./components/DropdownLink";
 import LinkNav from "./components/LinkNav";
-import { cn } from "@/lib/utils";
 import styles from "./header.module.css";
 
 export default function Header() {
@@ -77,9 +77,9 @@ export default function Header() {
 
     return (
         <>
-            <div className={cn(styles.containerF, menuActive ? "full-height" : "")}>
+            <div className={`${styles.containerF} ${menuActive ? "full-height" : ""}`}>
                 <header
-                    className={cn(styles.headercontainer, "h-[100px] bg-[--azul_oscuro] flex items-center justify-center gap-6 px-5" ,menuActive ? "menu-active" : "")}
+                    className={`${styles["header-container"]} h-[100px] bg-[--azul_oscuro] flex items-center justify-center gap-6 px-5 ${menuActive ? styles["menu-active"] : ""}`}
                 >
                     <LinkNav text={"Inicio"} link={"/"} />
                     <LinkNav text={"Nosotros"} link={"/nosotros"} />
@@ -87,11 +87,11 @@ export default function Header() {
                     
 
                     {currentMenu === "main" ? (
-                        <div className= {cn("w-[90px] text-white mx-7 text-center", styles.logo)}>
+                        <div className={`w-[90px] text-white mx-7 text-center ${styles.logo}`}>
                             <img src="/header_footer/logo_azul_letraBlanco_ledneonpublicidad.webp" alt="Logotipo de Neon LED Publicidad con letras blancas y fondo negro" />
                         </div>
                     ) : (
-                        <div className={cn(styles.log,"h-[50px] w-auto  text-white mx-7 text-center flex items-center justify-center")}>
+                        <div className={`h-[50px] w-auto  text-white mx-7 text-center ${styles.logo} flex items-center justify-center`}>
                             <a
                                 href="#"
                                 onClick={() => {
@@ -108,15 +108,15 @@ export default function Header() {
                     <LinkNav text={"Login"} link={"/login"} />
 
                     {isSmallScreen && (
-                        <div className={styles.menuicon} onClick={toggleMenu}>
-                            <span className={cn(styles.menuicon ,menuActive ? "text-small" : "text-large")}>
+                        <div className={styles["menu-icon"]} onClick={toggleMenu}>
+                            <span className={`${styles["menu-icon-text"]} ${menuActive ? styles["text-small"] : styles["text-large"]}`}>
                                 {menuActive ? "Cerrar" : "\u2630"}
                             </span>
                             {menuActive && (
-                                <div className={styles.iconbox}>
-                                    <div className={styles.innerbox}>
-                                        <div className={cn(styles.bar, styles.bar1)}></div>
-                                        <div className={cn(styles.bar, styles.bar2)}></div>
+                                <div className={styles["icon-box"]}>
+                                    <div className={styles["inner-box"]}>
+                                        <div className={`${styles.bar} ${styles.bar1}`}></div>
+                                        <div className={`${styles.bar} ${styles.bar2}`}></div>
                                     </div>
                                 </div>
                             )}
@@ -125,7 +125,7 @@ export default function Header() {
                 </header>
                 {/* {menuActive && (
                     <div className="dropdown-menu bg-gradient-to-r from-[--azul_brillante] to-[--azul_intenso]"> */}
-                <div className={cn(styles.dropdownmenu," bg-gradient-to-r from-[--azul_brillante] to-[--azul_intenso]",menuActive ? "show" : "")}>
+                <div className={`${styles["dropdown-menu"]} bg-gradient-to-r from-[--azul_brillante] to-[--azul_intenso] ${menuActive ? styles.show : ""}`}>
 
                     {currentMenu === "main" && (
                         <>
@@ -265,7 +265,7 @@ export default function Header() {
                         </>
                     )}
 
-                    <div className={styles.redbg}>
+                    <div className="red-bg">
                         <div className="absolute w-[110px] h-[110px] left-1/2 bottom-0 translate-x-[-50%] translate-y-[40%] z-30 rounded-full bg-white flex items-center justify-center">
                             <img
                                 className="w-[75px] h-[75px] object-contain"
