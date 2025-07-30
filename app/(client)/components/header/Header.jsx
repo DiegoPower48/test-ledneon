@@ -268,7 +268,7 @@ export default function Header() {
                         <div className="absolute w-[110px] h-[110px] left-1/2 bottom-0 translate-x-[-50%] translate-y-[40%] z-30 rounded-full bg-white flex items-center justify-center">
                             <img
                                 className="w-[75px] h-[75px] object-contain"
-                                src="/header_footer/logo_azul_letraNegra_ledneonpublicidad.webp"
+                                src="/header_footer/logo_azul_letraNegra_ledneonpublicidad2.webp"
                                 alt="Logotipo de Neon LED Publicidad con letras negras"
                             />
                         </div>
