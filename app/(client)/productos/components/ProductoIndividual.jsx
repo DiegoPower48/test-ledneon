@@ -9,7 +9,7 @@ function Producto({ imgSrc, altText, description, route, imgSrcMobile }) {
           src={imgSrcMobile}
           alt={altText}
           className={styles["producto-img"]}
-          srcSet={`${imgSrcMobile} 200w, ${imgSrc} 800w`}
+          srcSet={`${imgSrcMobile} 200w, ${imgSrcMobile} 800w`}
           sizes="(max-width: 768px) 200px, 800px"
         />
         <div className={styles["producto-description"]}>
