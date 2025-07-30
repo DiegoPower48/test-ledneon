@@ -55,9 +55,9 @@ export default function Home() {
 
     const clientLogos = [
     { imgSrc: "/home/Jockeyplaza_Logo_ledneonpublicidad.webp", altText: "Logotipo blanco y negro del centro comercial Jockey Plaza con letra J" },
-    { imgSrc: "/home/Malldelsur_Logo_ledneonpublicidad.webp", altText: "Logotipo de Mall del Sur con pétalos de colores sobre fondo azul" },
+    { imgSrc: "/home/Malldelsur_Logo_ledneonpublicidad2.webp", altText: "Logotipo de Mall del Sur con pétalos de colores sobre fondo azul" },
     { imgSrc: "/home/logo_lk_constructora_e_inversiones.webp", altText: "Logotipo de L&K Constructora e Inversiones con diseño de edificio en tonos azules y verdes" },
-    { imgSrc: "/home/Crisol_Logo_ledneopublicidad.webp", altText: "Logotipo de Crisol con fondo amarillo y texto azul Libros y Más" }, 
+    { imgSrc: "/home/Crisol_Logo_ledneopublicidad2.webp", altText: "Logotipo de Crisol con fondo amarillo y texto azul Libros y Más" }, 
     { imgSrc: "/home/BancodelaNación_ledneonpublicidad2.webp", altText: "Logotipo del Banco de la Nación Perú con texto negro y símbolo rojo" }, 
   ];
 

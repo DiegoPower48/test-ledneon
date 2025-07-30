@@ -87,7 +87,7 @@ export default function Header() {
 
                     {currentMenu === "main" ? (
                         <div className={`w-[90px] text-white mx-7 text-center ${styles.logo}`}>
-                            <img src="/header_footer/logo_azul_letraBlanco_ledneonpublicidad.webp" alt="Logotipo de Neon LED Publicidad con letras blancas y fondo negro" />
+                            <img src="/header_footer/logo_azul_letraBlanco_ledneonpublicidad2.webp" alt="Logotipo de Neon LED Publicidad con letras blancas y fondo negro" />
                         </div>
                     ) : (
                         <div className={`h-[50px] w-auto  text-white mx-7 text-center ${styles.logo} flex items-center justify-center`}>
