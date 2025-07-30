@@ -8,6 +8,7 @@ function FilaProductos({ productos }) {
       {productos.map((producto, index) => (
         <Producto
           key={index}
+          imgSrcMobile={producto.imgSrcMobile}
           imgSrc={producto.imgSrc}
           altText={producto.altText}
           description={producto.description}
