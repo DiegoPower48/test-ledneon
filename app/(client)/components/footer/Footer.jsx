@@ -54,7 +54,7 @@ export default function Footer() {
                                 <img className="w-full" src="/reclamaciones/
                                 librodereclamaciones_ledneonpublicidad2.webp" 
                                 sizes="(max-width: 600px) 200px"
-                                 srcSet="/reclamaciones/librodereclamaciones_ledneonpublicidad.webp 200w"
+                                 srcSet="/reclamaciones/librodereclamaciones_ledneonpublicidadmobile.webp 200w"
                                 alt="Ilustración de un libro de reclamaciones abierto con páginas blancas"  width="200"
   height="82" />
                             </Link>
