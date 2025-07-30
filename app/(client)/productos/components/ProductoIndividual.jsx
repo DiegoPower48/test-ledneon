@@ -5,7 +5,7 @@ function Producto({ imgSrc, altText, description, route, imgSrcMobile }) {
   return (
     <a href={route} className={styles["producto-link"]}>
       <div className={styles.producto}>
-        <img src={imgSrc} alt={altText} className={styles["producto-img"]}
+        <img src={imgSrcMobile} alt={altText} className={styles["producto-img"]}
       srcSet={`${imgSrcMobile} 200w, ${imgSrc} 800w`}
   sizes="(max-width: 768px) 200px, 800px"
         />
