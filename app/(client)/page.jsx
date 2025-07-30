@@ -18,24 +18,28 @@ export default function Home() {
   const fila1 = [
     {
       imgSrc: "/productosPrincipal/letrero_crocs_verde_con_letras_blancas.webp",
+      imgSrcMobile:"/productosPrincipal/letrero_crocs_verde_con_letras_blancas_mobile.webp",
       altText: "Producto 1",
       description: "LETRAS DE ACRÍLICO",
       route: "/productos/letras-acrilico"
     },
     {
       imgSrc: "/productosPrincipal/logo_lux_nails_studio_iluminado_en_dorado.webp",
+      imgSrcMobile:"/productosPrincipal/logo_lux_nails_studio_iluminado_en_dorado_mobile.webp",
       altText: "Producto 2",
       description: "LETRAS DORADAS Y PLATEADAS",
       route: "/productos/letras-doradas"
     },
     {
       imgSrc: "/productosPrincipal/fachada_farmacia_maria_pacheco_con_cruz_verde.webp",
+      imgSrcMobile:"/productosPrincipal/fachada_farmacia_maria_pacheco_con_cruz_verde_mobile.webp",
       altText: "Fachada de Farmacia Lda. Maria Pacheco con cruz verde luminosa",
       description: "LETREROS LUMINOSOS",
       route: "/productos/letreros-luminosos"
     },
     {
       imgSrc: "/productosPrincipal/letrero_woks_cerveza_artesanal_neon_verde_y_ambar.webp",
+      imgSrcMobile:"/productosPrincipal/letrero_woks_cerveza_artesanal_neon_verde_y_ambar_mobile.webp",
       altText: "Letrero neón de Wok's Cerveza Artesanal en colores verde y ámbar de noche",
       description: "LETRAS DE NEÓN",
       route: "/productos/letras-neon"

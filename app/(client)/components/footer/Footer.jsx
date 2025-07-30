@@ -51,12 +51,14 @@ export default function Footer() {
                             <span className="w-[30px] mx-auto lg:mx-0 h-[6px] border-t-2 border-solid border-t-[--azul_brillante]"></span>
                             <Link className="w-[200px] m-1" href={"/reclamaciones"}>
                                 <p className="text-center">Libro de reclamos</p>
-                                <img className="w-full" src="/reclamaciones/
-                                librodereclamaciones_ledneonpublicidad2.webp" 
-                                sizes="(max-width: 600px) 200px"
-                                 srcSet="/reclamaciones/librodereclamaciones_ledneonpublicidadmobile.webp 200w"
-                                alt="Ilustración de un libro de reclamaciones abierto con páginas blancas"  width="200"
-  height="82" />
+                                <img className="w-full" src="/reclamaciones/librodereclamaciones_ledneonpublicidad.webp" 
+                                 srcSet="
+    /reclamaciones/librodereclamaciones_ledneonpublicidadmobile.webp 200w,
+    /reclamaciones/librodereclamaciones_ledneonpublicidad.webp 626w
+  "
+                                alt="Ilustración de un libro de reclamaciones abierto con páginas blancas"
+                                width="auto"
+                                height="auto"/>
                             </Link>
                         </div>
                     </div>
