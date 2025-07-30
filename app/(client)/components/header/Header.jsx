@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import DropdownLink from "./components/DropdownLink";
 import LinkNav from "./components/LinkNav";
 import styles from "./header.module.css";
@@ -77,7 +76,7 @@ export default function Header() {
 
     return (
         <>
-            <div className={`${styles.containerF} ${menuActive ? "full-height" : ""}`}>
+            <div className={`${styles.containerF} ${menuActive ? styles["full-height"] : ""}`}>
                 <header
                     className={`${styles["header-container"]} h-[100px] bg-[--azul_oscuro] flex items-center justify-center gap-6 px-5 ${menuActive ? styles["menu-active"] : ""}`}
                 >

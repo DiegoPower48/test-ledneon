@@ -1,11 +1,11 @@
-.homecontainer {
+.home-container {
   position: relative;
   height: 50vh;
   width: 100%;
  margin-bottom: 20px;
 }
 
-.overlaycards {
+.overlay-cards {
   position: absolute;
   top: 4%;
   z-index: 1;
@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.gradientbanner {
+.gradient-banner {
   min-height: 45vh;
   display: flex;
   flex-direction: column;
@@ -21,19 +21,19 @@
   margin-top: 2%;
 }
 
-.whiteline {
+.white-line {
   height: 30%;
   flex: 1;
   background-color: #ffffff;
 }
 
-.gradientline {
+.gradient-line {
   flex: 2;
   height: 100%;
   background: linear-gradient(to right, #44b0f8, #1a7af5, #1056d2);
 }
 
-.threecardrow {
+.three-card-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,24 +56,24 @@
   min-width: 250px;
 }
 
-.cardicon {
+.card-icon {
   width: 80px;
   height: 80px;
   margin-bottom: 1rem;
 }
 
-.cardtitle {
+.card-title {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.carddescription {
+.card-description {
   font-size: 0.9rem;
   color: white;
 }
 
-.squareinfocontainer {
+.square-info-container {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -83,7 +83,7 @@
   z-index: 1;
 }
 
-.customsquare {
+.custom-square {
   background-color: #0e1721;
   border-radius: 0 8px 8px 0;
   width: 30%;
@@ -92,7 +92,7 @@
   /* border: 1px solid red; */
 }
 
-.inforectangle {
+.info-rectangle {
   background-color: #0e1721;
   border-radius: 12px 0 0 12px;
   padding: 5rem 4rem;
@@ -100,19 +100,19 @@
   color: white;
 }
 
-.infotitle {
+.info-title {
   font-size: 1.25rem;
   font-weight: bold;
   color: #c5e8f9;
   text-shadow: 0 0 1px #c5e8f9, 0 0 2px #c5e8f9, 0 0 20px #c5e8f9;
 }
 
-.infodescription {
+.info-description {
   font-size: 1rem;
   margin-top: 0.5rem;
 }
 
-.intermediateimage {
+.intermediate-image {
   position: absolute;
   bottom: -20%;
   left: 17%;
@@ -123,27 +123,27 @@
 }
 
 @media (max-width: 768px) {  
-  .homecontainer {
+  .home-container {
     height: 70vh;
   }
-  .gradientbanner {
+  .gradient-banner {
     min-height: 60vh;
     margin-top: 0;
   }
-  .squareinfocontainer {
+  .square-info-container {
     height: auto;
     bottom: 45%;
     /* flex-direction: column; */
     gap: 2rem;
     justify-content: right;
   }
-  .intermediateimage {
+  .intermediate-image {
     transform: translateX(-10%) translateY(65%);
   }
-  .customsquare {
+  .custom-square {
     display: none;
   }
-  .inforectangle {
+  .info-rectangle {
     padding: 5rem 1.8rem 5rem 5rem;
     width: 90%;
   }
@@ -151,56 +151,56 @@
     max-height: 180px;
     width: 25%;
   }
-  .carddescription {
+  .card-description {
     font-size: 0.75rem;
   }
-  .cardtitle {
+  .card-title {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 517px) {
-  .infodescription {
+  .info-description {
     font-size: 0.65rem;
   }
 }
 
 @media (max-width: 697px) {
-  .inforectangle {
+  .info-rectangle {
     padding: 5rem 1.8rem 5rem 5rem;
   }
-  .infodescription {
+  .info-description {
     font-size: 0.65rem;
   }
-  .intermediateimage {
+  .intermediate-image {
     width: auto;
     height: 230px;
   }
 }
 
 @media (max-width: 768px) {
-  .gradientbanner {
+  .gradient-banner {
     min-height: 80vh;
   }
-  .whiteline {
+  .white-line {
     flex: 1;
   }
-  .gradientline {
+  .gradient-line {
     flex: 3;
   }
 }
 
 @media (max-width: 480px) {
-  .whiteline {
+  .white-line {
     flex: 1;
   }
-  .gradientline {
+  .gradient-line {
     flex: 4;
   }
 }
 
 @media (max-width: 768px) {
-  .threecardrow {
+  .three-card-row {
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -212,16 +212,16 @@
     min-width: 150px;
   }
 
-  .cardicon {
+  .card-icon {
     width: 50px;
     height: 50px;
   }
 
-  .cardtitle {
+  .card-title {
     font-size: 0.9rem;
   }
 
-  .carddescription {
+  .card-description {
     font-size: 0.75rem;
   }
 }
@@ -232,11 +232,11 @@
     min-width: 120px;
   }
 
-  .cardtitle {
+  .card-title {
     font-size: 0.8rem;
   }
 
-  .carddescription {
+  .card-description {
     font-size: 0.7rem;
   }
 }

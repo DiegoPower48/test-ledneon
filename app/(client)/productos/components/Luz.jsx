@@ -5,5 +5,5 @@ import { cn } from "@/lib/utils";
 
 
 export default function NeonBackground({className}) {
-  return <div className={cn(styles.neonbackground, className)}></div>;
+  return <div className={cn(styles["neon-background"], className)}></div>;
 }

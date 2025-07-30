@@ -6,7 +6,6 @@ import FilaProductos from "./FilaProductos";
 import LineaHorizontal from "./LineaHorizontal";
 
 import styles from "./productoStyles.module.css";
-import { cn } from "@/lib/utils";
 
 export default function Productos() {
   // Definimos los productos por fila como un arreglo de objetos
@@ -149,12 +148,12 @@ export default function Productos() {
   }, []);
 
   return (
-    <div className={cn(styles.productoscontainer, "mt-12")}>
+    <div className={`${styles["productos-container"]} mt-12`}>
       {filas.map((fila, index) => (
         <div key={index}>
           <motion.div
             ref={(el) => (filasRefs.current[index] = el)}
-            className={styles.filaproductos}
+            className={styles["fila-productos"]}
             initial={{ x: index % 2 === 0 ? "100%" : "-100%" }}
             animate={{
               x: isAnimations[index] ? 0 : index % 2 === 0 ? "100%" : "-100%",

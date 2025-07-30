@@ -2,12 +2,12 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
   }*/
 
-.bgblack {
+.bg-black {
   overflow: hidden;
   position: relative;
 }
 
-.circlecontainer {
+.circle-container {
   position: absolute;
   width: 70rem;
   height: 70rem;
@@ -18,11 +18,11 @@
   z-index: 5;
 }
 
-.textcolor {
+.text-color {
   color: #a5dffd;
 }
 
-.neontext {
+.neon-text {
   color: white;
   text-shadow: 0 0 1px #c5e8f9, 0 0 2px #c5e8f9, 0 0 10px #c5e8f9;
 }
@@ -43,7 +43,7 @@
   }
 }
 
-.neontextov2 {
+.neon-textov2 {
   animation: neonv2 1.5s ease-in-out infinite alternate;
 }
 
@@ -62,11 +62,11 @@
   }
 }
 
-.neontextov4 {
+.neon-textov4 {
   animation: neonv4 1.5s ease-in-out infinite alternate;
 }
 
-.button {
+.boton {
   --primary-color: #645bff;
   --secondary-color: #fff;
   --hover-color: #1a7af5;
@@ -86,13 +86,13 @@
   margin: 0 auto;
 }
 
-.button .arrowwrapper {
+.boton .arrow-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.button .arrow {
+.boton .arrow {
   margin-top: 1px;
   width: var(--arrow-width);
   background: var(--primary-color);
@@ -101,7 +101,7 @@
   transition: 0.2s;
 }
 
-.button .arrow::before {
+.boton .arrow::before {
   content: "";
   box-sizing: border-box;
   position: absolute;
@@ -115,19 +115,19 @@
   transform: rotate(-45deg);
 }
 
-.button:hover {
+.boton:hover {
   background-color: var(--hover-color);
 }
 
-.button:hover .arrow {
+.boton:hover .arrow {
   background: var(--secondary-color);
 }
 
-.button:hover .arrow:before {
+.boton:hover .arrow:before {
   right: 0;
 }
 
-.neonbackground {
+.neon-background {
   position: absolute;
   top: -150px;
   left: 50%;
@@ -140,13 +140,13 @@
   pointer-events: none;
 }
 
-.productoscontainer {
+.productos-container {
   padding: 3% 10%;
   max-width: 100vw;
   overflow-x: hidden;
 }
 
-.productorow {
+.producto-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
@@ -206,7 +206,7 @@
   box-shadow: 0 0 0 2px rgb(255, 255, 255); 
 }
 
-.productoimg {
+.producto-img {
  
   display: block;
   /* border-radius: 8px; */
@@ -218,7 +218,7 @@
   object-position: center;
 }
 
-.productodescription {
+.producto-description {
   width: 100%;
   height: 4rem;
   display: flex;
@@ -235,7 +235,7 @@
   box-sizing: border-box;
 }
 
-.productodescriptiontext {
+.producto-description__text {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;
@@ -245,7 +245,7 @@
   text-overflow: ellipsis;
 }
 
-.borderb4 {
+.border-b-4 {
   border-bottom-width: 4px;
 }
 
@@ -253,11 +253,11 @@
   width: 100%;
 }
 
-.filaproductos {
+.fila-productos {
   will-change: transform;
 }
 @media (max-width: 810px) {
-  .productorow {
+  .producto-row {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }

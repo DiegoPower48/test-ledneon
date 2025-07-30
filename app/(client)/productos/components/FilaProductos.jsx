@@ -4,7 +4,7 @@ import styles from './productoStyles.module.css'
 
 function FilaProductos({ productos }) {
   return (
-    <div className={styles.productorow}>
+    <div className={styles["producto-row"]}>
       {productos.map((producto, index) => (
         <Producto
           key={index}
