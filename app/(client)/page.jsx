@@ -13,7 +13,7 @@ const AboutStatic = () => (
     </p>
   </section>
 );
-
+ 
 export default function Home() {
   const fila1 = [
     {

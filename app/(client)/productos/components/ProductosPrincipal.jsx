@@ -10,7 +10,7 @@ import styles from "./productoStyles.module.css";
 export default function Productos() {
   // Definimos los productos por fila como un arreglo de objetos
   const filas = [
-    [
+    [ 
       {
         imgSrc: "/productosPrincipal/letrero_crocs_verde_con_letras_blancas.webp",
         altText: "Letrero de tienda Crocs en color verde con letras blancas retroiluminadas",

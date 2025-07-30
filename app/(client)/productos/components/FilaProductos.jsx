@@ -1,7 +1,7 @@
 import React from 'react';
 import Producto from './ProductoIndividual';
 import styles from './productoStyles.module.css'
-
+ 
 function FilaProductos({ productos }) {
   return (
     <div className={styles["producto-row"]}>
