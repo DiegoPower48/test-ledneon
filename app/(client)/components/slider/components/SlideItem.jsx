@@ -14,15 +14,17 @@ export const SlideItem = ({ slides, current }) => {
       }`}
     >
       {/* Imagen */}
-      <Image
-        src={slide.imgSrc}
-        alt={slide.altText}
-        fill
-        className="object-cover object-center brightness-75"
-        priority
-        fetchPriority="high"
-        decoding="async"
-      />
+    <Image
+  src={slide.imgSrc}
+  alt={slide.altText}
+  width={400} // o el ancho real en móvil
+  height={225}
+  priority
+  fetchPriority="high"
+  decoding="async"
+  className="object-cover object-center"
+  sizes="(max-width: 767px) 100vw, (max-width: 1023px) 80vw, 60vw"
+/>
 
       {/* Borde izquierdo borroso - visible solo en pantallas md+ */}
       <div className="hidden md:block absolute left-0 top-0 h-full w-16 bg-black/10 backdrop-blur-sm pointer-events-none z-10" />
