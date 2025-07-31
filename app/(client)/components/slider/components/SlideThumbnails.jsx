@@ -17,7 +17,7 @@ export const SlideThumbnails = ({ slides, current, setCurrent }) => {
           }`}
         >
           <Image
-            src={slide.imgSrc}
+            src={slide.imgSrcIcon}
             alt={slide.altText}
             fill
             className="object-cover rounded-xl shadow-2xl"
