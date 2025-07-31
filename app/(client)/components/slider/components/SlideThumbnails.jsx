@@ -12,7 +12,7 @@ export const SlideThumbnails = ({ slides, current, setCurrent }) => {
           onClick={() => setCurrent(index)}
           className={`relative h-32 w-24 lg:h-48 lg:w-32 transition-all duration-300 transform overflow-hidden ${
             index === current
-              ? "ring-4 ring-[--azul_brillante] scale-110 brightness-100"
+              ? "ring-4 rounded-xl ring-[--azul_brillante] scale-110 brightness-100"
               : "opacity-70 hover:opacity-90 hover:scale-105 brightness-75"
           }`}
         >
