@@ -20,8 +20,6 @@ export const SlideItem = ({ slides, current }) => {
         fill
         className="object-cover object-center brightness-75"
         priority
-        fetchPriority="high"
-        decoding="async"
       />
 
       {/* Borde izquierdo borroso - visible solo en pantallas md+ */}
