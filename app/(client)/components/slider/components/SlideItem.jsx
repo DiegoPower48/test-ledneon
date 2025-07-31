@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 
 export const SlideItem = ({ slides, current }) => {
@@ -10,15 +9,15 @@ export const SlideItem = ({ slides, current }) => {
     <div className="absolute inset-0">
       <picture>
         <source media="(max-width: 767px)" srcSet={slide.imgSrcMobile} />
-        <Image
+        <img
           src={slide.imgSrc}
           alt={slide.altText}
-          fill
-          priority
-          fetchPriority="high"
+          width={800}
+          height={450}
+          loading="eager"
           decoding="async"
-          className="object-cover object-center"
-          sizes="(max-width: 767px) 100vw, (max-width: 1023px) 80vw, 60vw"
+          className="object-cover object-center w-full h-full"
+          style={{ position: "absolute", inset: 0 }}
         />
       </picture>
 
