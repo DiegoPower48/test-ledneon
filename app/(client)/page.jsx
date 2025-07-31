@@ -47,10 +47,10 @@ export default function Home() {
   ];
 
   const slidesData = [
-    { imgSrc: "/home/logo_mlg_letras_doradas_con_iluminacion.webp", altText: "Logotipo dorado iluminado de MLG en pared de oficina" },
-    { imgSrc: "/home/letreros_negocio_2.webp", altText: "Letrero iluminado de Bembos" },
-    { imgSrc: "/home/letrero_neon_tienda_tatuajes_tattoo.webp", altText: "Letrero neón con diseño de máquina de tatuajes y palabra Tattoo en vidriera" },
-    { imgSrc: "/home/letrero_tambo_colores_amarillo_y_magenta.webp", altText: "Letrero luminoso de Tambo con fondo amarillo y letras magenta" },
+    { imgSrc: "/home/logo_mlg_letras_doradas_con_iluminacion.webp", imgSrcMobile:"/home/logo_mlg_letras_doradas_con_iluminacion_mobile.webp", altText: "Logotipo dorado iluminado de MLG en pared de oficina" },
+    { imgSrc: "/home/letreros_negocio_2.webp", imgSrcMobile:"/home/letreros_negocio_2_mobile.webp", altText: "Letrero iluminado de Bembos" },
+    { imgSrc: "/home/letrero_neon_tienda_tatuajes_tattoo.webp", imgSrcMobile:"/home/letrero_neon_tienda_tatuajes_tattoo_mobile.webp", altText: "Letrero neón con diseño de máquina de tatuajes y palabra Tattoo en vidriera" },
+    { imgSrc: "/home/letrero_tambo_colores_amarillo_y_magenta.webp", imgSrcMobile:"/home/letrero_tambo_colores_amarillo_y_magenta_mobile.webp", altText: "Letrero luminoso de Tambo con fondo amarillo y letras magenta" },
   ];
 
     const clientLogos = [
